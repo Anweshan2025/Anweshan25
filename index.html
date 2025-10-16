@@ -65,8 +65,27 @@
 
     .register-btn:hover {background:#1de9b6; transform:scale(1.05);}
 
-    /* About */
-    .about {background: rgba(255,255,255,0.05); border-radius:12px; margin-top:20px; padding:40px; font-size:1.2em;}
+    /* About Section Cards */
+    .about-cards {
+      display:grid; 
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:20px; 
+      margin-top:20px;
+    }
+
+    .about-card {
+      background: rgba(0,0,0,0.3);
+      padding:25px;
+      border-radius:12px;
+      transition:0.3s;
+      font-size:1.1em;
+      text-align:left;
+    }
+
+    .about-card:hover {
+      background: rgba(0,255,200,0.1);
+      transform: scale(1.03);
+    }
 
     /* Rules */
     .rules {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:20px;}
@@ -117,58 +136,30 @@
 </section>
 
 <section id="about">
-  <div class="about">
-    <h2>About Anweshan</h2>
-    <p>Welcome to Anweshan — where imagination meets innovation.</p>
-    <p>Instructions for Science Exhibition – Anweshan 2025
-
-Dear Students,
-Our Annual Science Exhibition – Anweshan 2025 – is an exciting platform for you to showcase your curiosity, creativity and understanding of scientific concepts. Let your imagination take shape through models, demonstrations and experiments that reflect the true spirit of science.
-
-Please read the following instructions carefully before filling out the Google Form: </p>
-
-<p>1. Group Formation
-- Each group must consist of 4 students.
-- Students of Std. 6 and Std. 7 can form mixed groups.
-- Students of Std. 8 and Std. 9 must form groups within their own standard.
-- Only one registration per group should be submitted( only one member of team will fill the Google form)</p>
-
-<p>2. Type of Project •	
-Your project may be working model , non-working model or a scientific demonstration. It must be based on a scientific concept relevant to your syllabus or an innovative idea.
-Projects should include creativity, problem-solving and scientific thinking.</p>
-
-<p>3. Project Guidelines•	
--Each group must select a clear topic/title.
--Materials used should be safe, school-appropriate, and preferably eco-friendly.
--Models should be portable, easy to display and mess-free.
--No harmful chemicals or hazardous materials are allowed.</p>
-
-<p></p>4. Presentation
--Prepare a short presentation (2–3 minutes) explaining your project’s concept, working, and application.
--Be ready to answer judges’ questions confidently.
--Two students will present at a time while the other two provide support.</p>
-
-<p></p>5. Form Submission
--Fill in all details carefully:
-Group Leader Name, Group Members, Class & Division, contact number, Project Title and Brief Description.
--Ensure that your project idea is finalized before submitting the form.
--Only one entry per group will be accepted.</p>
-
-<p>Important point:  
--Last date to submit the form: 7th November 2025.
--Shortlisted projects will be displayed on the day of the exhibition.
--Teachers will review all topics to avoid duplication.</p>
-
-<p>Note : 
--Incomplete or duplicate entries will not be accepted.
--Bring your best ideas to life and make the Science Exhibition Anweshan 2025 a grand success!
-
-✨ “Think beyond limits for science begins where curiosity never ends!” ✨</p>>
-
-<p>Teacher incharge- 
-Mrs. Swati Prabhu 
-Mrs. Milan Karpe</p>
-   
+  <h2>About Anweshan</h2>
+  <div class="about-cards">
+    <div class="about-card">
+      <p>Welcome to Anweshan — where imagination meets innovation.</p>
+    </div>
+    <div class="about-card">
+      <p>Our Annual Science Exhibition – Anweshan 2025 – is an exciting platform for you to showcase your curiosity, creativity, and understanding of scientific concepts. Let your imagination take shape through models, demonstrations, and experiments that reflect the true spirit of science.</p>
+    </div>
+    <div class="about-card">
+      <p>Please read the instructions carefully before filling out the Google Form. Each group must consist of 4 students. Mixed groups allowed for Std. 6 & 7, and same standard groups for Std. 8 & 9. Only one registration per group.</p>
+    </div>
+    <div class="about-card">
+      <p>Projects can be working/non-working models or scientific demonstrations. They should be creative, safe, and school-appropriate. Models should be portable and mess-free.</p>
+    </div>
+    <div class="about-card">
+      <p>Prepare a short presentation (2–3 minutes) explaining your project’s concept, working, and application. Be ready to answer judges’ questions. Two students present at a time while the other two support.</p>
+    </div>
+    <div class="about-card">
+      <p>Fill in all details carefully in the form: Group Leader, Members, Class & Division, Contact number, Project Title, and Description. Last date: 7th November 2025.</p>
+    </div>
+    <div class="about-card">
+      <p>Teacher In-charge: Mrs. Swati Prabhu & Mrs. Milan Karpe</p>
+      <p>“Think beyond limits, for science begins where curiosity never ends!” ✨</p>
+    </div>
   </div>
 </section>
 
@@ -223,9 +214,3 @@ updateCountdown();
 
 </body>
 </html>
-
-
- 
-
-
-
